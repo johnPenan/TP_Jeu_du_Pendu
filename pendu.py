@@ -12,7 +12,6 @@ print(mot_au_hasard)
 lettres_trouvees = []
 
 erreurs = 0
-letter = ""
 
 
 while erreurs < 8:
