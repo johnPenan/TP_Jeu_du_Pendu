@@ -13,16 +13,22 @@ lettres_trouvees = []
 
 erreurs = 0
 
+letter = ""
 
-while erreurs < 8:
+
+
+while erreurs < 8 and letter != mot_au_hasard:
 
     lettres = input("Proposez une lettre composant le mot: ").strip()
     
     while len(lettres) != 1:
         lettres = input("Proposez une nouvelle lettre: ").strip()
-           
 
     lettres_trouvees.append(lettres)
+
+    letter = "".join(lettres_trouvees)
+
+    print("le letter:", letter)
 
     
     for lettre in mot_au_hasard:
@@ -38,6 +44,10 @@ while erreurs < 8:
     
 point = 8 - erreurs
 print("Vous avez un score de: ", point)
+
+
+
+# 
         
 
 
